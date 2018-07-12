@@ -1,0 +1,34 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Generate Color",
+      "identifier": "generate-color",
+      "shortcut": "ctrl shift c",
+      "script": "generate-color.js"
+    },
+    {
+      "name": "Generate Gradient",
+      "identifier": "generate-gradient",
+      "shortcut": "ctrl shift g",
+      "script": "generate-gradient.js"
+    }
+  ],
+  "menu": {
+    "title": "ColorSpark",
+    "items": [
+      "generate-color",
+      "generate-gradient"
+    ]
+  },
+  "version": "1.0.0",
+  "description": "A simple tool to help designers discover unique colors and gradients directly in Sketch.",
+  "homepage": "https://colorspark.app/sketch",
+  "name": "ColorSpark",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com/lukecjohnson/colorspark-sketch-plugin/master/.appcast.xml",
+  "author": "Luke Johnson",
+  "authorEmail": "luke.johnson9423@gmail.com"
+}
