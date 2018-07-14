@@ -3,11 +3,11 @@ Quickly generate and discover unique colors and gradients directly in Sketch.
 
 ## Generate Random Colors
 ### Control + Shift + C
-![Color Demo](https://colorspark.app/assets/color-demo.gif)
+![Color Demo](https://firebasestorage.googleapis.com/v0/b/color-spark.appspot.com/o/color-demo.gif?alt=media&token=bcb64470-7704-4645-858e-165cde8add28)
 
 ## Generate Random Gradients
 ### Control + Shift + G
-![Gradient Demo](https://colorspark.app/assets/gradient-demo.gif)
+![Gradient Demo](https://firebasestorage.googleapis.com/v0/b/color-spark.appspot.com/o/gradient-demo.gif?alt=media&token=3dc4e788-4073-4d8e-ba07-02d46b9cddfe)
 
 ## Installation
 
