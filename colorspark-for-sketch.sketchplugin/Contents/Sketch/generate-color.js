@@ -105,10 +105,9 @@ __webpack_require__.r(__webpack_exports__);
 
   var document = __webpack_require__(/*! sketch/dom */ "sketch/dom").getSelectedDocument();
 
-  var selection = document.selectedLayers;
-
   var Style = __webpack_require__(/*! sketch/dom */ "sketch/dom").Style;
 
+  var selection = document.selectedLayers;
   var characters = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"];
   var generatedColor = "#";
   var i = 0;
@@ -121,7 +120,7 @@ __webpack_require__.r(__webpack_exports__);
   selection.forEach(function (layer) {
     layer.style.fills = [{
       color: generatedColor,
-      fillType: Style.FillType.Color
+      fill: Style.FillType.Color
     }];
   });
 });

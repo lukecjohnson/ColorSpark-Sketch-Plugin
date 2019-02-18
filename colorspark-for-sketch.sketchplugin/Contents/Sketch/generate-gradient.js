@@ -101,28 +101,24 @@ var exports =
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (function (context) {
-  // Sketch API
   var sketch = __webpack_require__(/*! sketch */ "sketch");
 
   var document = __webpack_require__(/*! sketch/dom */ "sketch/dom").getSelectedDocument();
 
+  var Style = __webpack_require__(/*! sketch/dom */ "sketch/dom").Style;
+
   var selection = document.selectedLayers;
-
-  var Style = __webpack_require__(/*! sketch/dom */ "sketch/dom").Style; //Variables for generating colors
-
-
   var characters = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"];
   var generatedColor = "#";
   var generatedColor2 = "#";
-  var i = 0; // Creates a hex string
+  var i = 0;
 
   for (i = 0; i < 6; i++) {
     generatedColor += characters[Math.floor(Math.random() * characters.length)];
     ;
     generatedColor2 += characters[Math.floor(Math.random() * characters.length)];
     ;
-  } //Gradient angles
-
+  }
 
   var gradientAngles = [{
     fromX: "0",
@@ -170,11 +166,10 @@ __webpack_require__.r(__webpack_exports__);
     toX: "0.6",
     toY: "0"
   }];
-  var generatedAngle = gradientAngles[Math.floor(Math.random() * gradientAngles.length)]; // Sets each selected layer's fill to the generated gradient
-
+  var generatedAngle = gradientAngles[Math.floor(Math.random() * gradientAngles.length)];
   selection.forEach(function (layer) {
     layer.style.fills = [{
-      fillType: Style.FillType.Gradient,
+      fill: Style.FillType.Gradient,
       gradient: {
         gradientType: Style.GradientType.Linear,
         from: {

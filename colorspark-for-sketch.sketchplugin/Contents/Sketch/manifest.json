@@ -26,7 +26,7 @@
   "version": "1.0.0",
   "description": "A simple tool to help designers discover unique colors and gradients directly in Sketch.",
   "homepage": "https://colorspark.app/sketch",
-  "name": "ColorSpark",
+  "name": "ColorSpark-for-Sketch",
   "disableCocoaScriptPreprocessor": true,
   "appcast": "https://raw.githubusercontent.com/lukecjohnson/colorspark-sketch-plugin/master/.appcast.xml",
   "author": "Luke Johnson",
