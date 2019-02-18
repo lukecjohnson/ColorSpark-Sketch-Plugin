@@ -23,7 +23,7 @@
       "generate-gradient"
     ]
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple tool to help designers discover unique colors and gradients directly in Sketch.",
   "homepage": "https://colorspark.app/sketch",
   "name": "ColorSpark-for-Sketch",
