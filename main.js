@@ -1,8 +1,10 @@
-const sketch = require('sketch/dom')
+const sketch = require('sketch/dom');
+const ui = require('sketch/ui');
 
 function generateColor() {
   const characters = ["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"];
-  let color = "#";
+
+  let color = '#';
   for (let i = 0; i < 6; i++) {
     color += characters[Math.floor(Math.random()*characters.length)];
   }
@@ -13,8 +15,11 @@ function generateColor() {
 export function setNewColor() {
   const selection = sketch.getSelectedDocument().selectedLayers;
 
+  if (!selection.length) {
+    ui.message('No items selected')
+  }
+
   const color = generateColor();
-  console.log(color);
 
   selection.forEach(layer => {
     layer.style.fills = [{
@@ -26,6 +31,10 @@ export function setNewColor() {
 
 export function setNewGradient() {
   const selection = sketch.getSelectedDocument().selectedLayers;
+
+  if (!selection.length) {
+    ui.message('No items selected')
+  }
 
   const direction = Math.round(Math.random()) ? 'x' : 'y';
 
