@@ -1,11 +1,18 @@
 {
   "name": "colorspark-sketch",
   "version": "1.0.1",
-  "description": "A simple tool to help designers discover unique colors and gradients directly in Sketch.",
+  "description": "A handy tool to generate random colors and gradients, helping designers discover unique color \npalettes and spark creativity.",
   "homepage": "https://colorspark.app/sketch",
+  "repository": "https://github.com/lukecjohnson/colorspark-sketch.git",
   "author": {
     "name": "Luke Johnson",
     "email": "luke.johnson9423@gmail.com"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
   },
   "engines": {
     "sketch": ">=3.0"
@@ -18,13 +25,6 @@
       "assets/**/*"
     ]
   },
-  "scripts": {
-    "build": "skpm-build",
-    "watch": "skpm-build --watch",
-    "start": "skpm-build --watch --run",
-    "postinstall": "npm run build && skpm-link"
-  },
-  "repository": "https:/github.com/lukecjohnson/colorspark-sketch-plugin",
   "devDependencies": {
     "@skpm/builder": "^0.5.2"
   }
