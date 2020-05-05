@@ -1,0 +1,27 @@
+{
+  "compatibleVersion": "52.1",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Generate Color",
+      "identifier": "generate-color",
+      "shortcut": "ctrl shift c",
+      "script": "main.js",
+      "handler": "setNewColor"
+    },
+    {
+      "name": "Generate Gradient",
+      "identifier": "generate-gradient",
+      "shortcut": "ctrl shift g",
+      "script": "main.js",
+      "handler": "setNewGradient"
+    }
+  ],
+  "menu": {
+    "title": "ColorSpark",
+    "items": [
+      "generate-color",
+      "generate-gradient"
+    ]
+  }
+}

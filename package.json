@@ -1,5 +1,5 @@
 {
-  "name": "ColorSpark-for-Sketch",
+  "name": "colorspark-sketch",
   "version": "1.0.1",
   "description": "A simple tool to help designers discover unique colors and gradients directly in Sketch.",
   "homepage": "https://colorspark.app/sketch",
@@ -11,9 +11,9 @@
     "sketch": ">=3.0"
   },
   "skpm": {
-    "name": "ColorSpark-for-Sketch",
-    "manifest": "src/manifest.json",
-    "main": "colorspark-for-sketch.sketchplugin",
+    "name": "ColorSpark",
+    "manifest": "manifest.json",
+    "main": "colorspark.sketchplugin",
     "assets": [
       "assets/**/*"
     ]
