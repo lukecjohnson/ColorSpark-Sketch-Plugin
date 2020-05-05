@@ -1,0 +1,12 @@
+# Build
+colorspark.sketchplugin
+
+# Dependencies
+node_modules
+
+# IDE
+.vscode
+.idea
+
+# macOS
+.DS_Store
