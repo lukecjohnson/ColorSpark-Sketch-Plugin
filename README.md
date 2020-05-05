@@ -3,8 +3,10 @@ ColorSpark for Sketch is a handy tool to generate random colors and gradients, h
 palettes and spark creativity.
 
 ## Installation
-To install ColorSpark for Sketch, download `colorspark.sketchplugin` from the 
-[latest release](https://github.com/lukecjohnson/colorspark-sketch/releases).
+1. Download `colorspark.sketchplugin.zip` from the 
+[latest release](https://github.com/lukecjohnson/colorspark-sketch/releases)
+2. Unzip the archive
+3. Double click `colorspark.sketchplugin`
 
 ## Usage
 1. Select layer(s)
