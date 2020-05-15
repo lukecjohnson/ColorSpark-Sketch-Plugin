@@ -36,7 +36,7 @@ export function setNewGradient() {
     ui.message('No items selected')
   }
 
-  const direction = Math.round(Math.random()) ? 'x' : 'y';
+  const direction = ['x', 'y'][Math.round(Math.random())];
 
   const gradient = {
     gradientType: sketch.Style.GradientType.Linear,
